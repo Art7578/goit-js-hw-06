@@ -14,4 +14,4 @@ const foodIngredients = ingredients.forEach(ingredient => {
   ulList.append(items);
 })
 
-console.log(foodIngredients);
+
