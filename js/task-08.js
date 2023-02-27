@@ -8,12 +8,12 @@ function handleSubmit(event) {
         elements: { email, password },
     } = event.currentTarget
 
-    if (email.value === '' || password.value === '') {
-        return alert("Please fill in all the fields!")
-    }
-
     const userDetails = { email: email.value, password: password.value }
 
-    console.log(userDetails)
-    event.currentTarget.reset
+    if (email.value === '' || password.value === '') {
+        return alert("Please fill in all the fields!")
+    } else {
+        console.log(userDetails);
+        form.reset();
+    }
 };

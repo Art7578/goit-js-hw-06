@@ -1,7 +1,10 @@
-let controlFont = document.getElementById("font-size-control");
+const inputControler = document.querySelector("#font-size-control")
+const textElement = document.querySelector("#text")
 
-let text = document.getElementById("text");
+inputControler.addEventListener("input", onChangeInputControler);
 
-controlFont.oninput = function() {
-  text.style.fontSize = controlFont.value + "px";
+onChangeInputControler();
+
+function onChangeInputControler() {
+  textElement.style.fontSize = inputControler.value + "px";
 };
